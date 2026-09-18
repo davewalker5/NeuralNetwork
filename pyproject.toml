@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "neural_network"
-version = "1.0.0"
+version = "1.1.0"
 description = "Neural Network and Generative AI Exploration"
 readme = "README.md"
 requires-python = ">=3.14"
@@ -15,3 +15,6 @@ authors = [
 dependencies = [
     "numpy>=2.3,<3",
 ]
+
+[project.optional-dependencies]
+exploration = ["matplotlib>=3.10.5,<4"]
