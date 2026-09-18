@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=83", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural_network"
+version = "1.0.0"
+description = "Neural Network and Generative AI Exploration"
+readme = "README.md"
+requires-python = ">=3.14"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Dave Walker" },
+]
+dependencies = [
+    "numpy>=2.3,<3",
+]
