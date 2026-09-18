@@ -105,3 +105,18 @@ at nonzero parameters on an asymmetric dataset, so the bias check is nontrivial.
 These tolerances apply to the modest logits in these examples; extreme scales
 or tiny epsilon can cause subtraction to lose precision. The check leaves the
 original neuron unchanged.
+
+## Graphical explorer
+
+Install and run the optional Matplotlib wrapper from the project root:
+
+```sh
+venv/bin/python -m pip install '.[exploration]'
+venv/bin/python -m src.single_neuron.trainable_neuron_explorer
+```
+
+Move the requested centre and pair half-spacing, then press Train. The explorer
+retains the originals and optionally adds one opposing pair strictly inside the
+2–4 gap. Every run starts from zero parameters. Replay selects matching states
+and losses from the recorded trace without retraining. See the Wiki document
+“Trainable Neuron Boundary Explorer” for experiments and GUI setup.
